@@ -1,0 +1,873 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>/home/nahue/Desktop/Wollok2020/workspace/git/2021s1-herencia-tazas/.README.md.html</title>
+
+
+<style type="text/css">
+body {
+	color: #333;
+	font: 13px/1.4 "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	background: transparent;
+	color: #4183c4;
+	text-decoration: none;
+}
+
+a:active,
+a:hover {
+	outline: 0 none;
+	text-decoration: underline;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+mark {
+	background: #ff0;
+	color: #000;
+}
+small {
+	font-size: 80%;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+img {
+	border: 0 none;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	margin: 1em 40px;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace,monospace;
+	font-size: 1em;
+}
+
+pre {
+	overflow: auto;
+	font: 12px Consolas,"Liberation Mono",Menlo,Courier,monospace;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.markdown-body {
+	padding: 30px;
+	font-size: 16px;
+	line-height: 1.6;
+	word-wrap: break-word;
+}
+
+.markdown-body>*:first-child {
+	margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+	margin-bottom: 0 !important;
+}
+
+.markdown-body .absent {
+	color: #c00;
+}
+
+.markdown-body .anchor {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	padding-right: 6px;
+	padding-left: 30px;
+	margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+	outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	position: relative;
+	margin-top: 1em;
+	margin-bottom: 16px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+	display: none;
+	color: #000;
+	vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+	padding-left: 8px;
+	margin-left: -30px;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+	display: inline-block;
+}
+
+.markdown-body h1 tt,
+.markdown-body h1 code,
+.markdown-body h2 tt,
+.markdown-body h2 code,
+.markdown-body h3 tt,
+.markdown-body h3 code,
+.markdown-body h4 tt,
+.markdown-body h4 code,
+.markdown-body h5 tt,
+.markdown-body h5 code,
+.markdown-body h6 tt,
+.markdown-body h6 code {
+	font-size: inherit;
+}
+
+.markdown-body h1 {
+	padding-bottom: 0.3em;
+	font-size: 2.25em;
+	line-height: 1.2;
+	border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+	padding-bottom: 0.3em;
+	font-size: 1.75em;
+	line-height: 1.225;
+	border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+	font-size: 1.5em;
+	line-height: 1.43;
+}
+
+.markdown-body h4 {
+	font-size: 1.25em;
+}
+
+.markdown-body h5 {
+	font-size: 1em;
+}
+
+.markdown-body h6 {
+	font-size: 1em;
+	color: #777;
+}
+
+.markdown-body p,.markdown-body blockquote,
+.markdown-body ul,.markdown-body ol,
+.markdown-body dl,.markdown-body table,
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.markdown-body hr {
+	height: 4px;
+	padding: 0;
+	margin: 16px 0;
+	background-color: #e7e7e7;
+	border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 2em;
+}
+
+.markdown-body ul.no-list,
+.markdown-body ol.no-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body li>p {
+	margin-top: 16px;
+}
+
+.markdown-body dl {
+	padding: 0;
+}
+
+.markdown-body dl dt {
+	padding: 0;
+	margin-top: 16px;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.markdown-body dl dd {
+	padding: 0 16px;
+	margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+	padding: 0 15px;
+	color: #777;
+	border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+	margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+	margin-bottom: 0;
+}
+
+.markdown-body table {
+	display: block;
+	width: 100%;
+	overflow: auto;
+	word-break: normal;
+	word-break: keep-all;
+}
+
+.markdown-body table th {
+	font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+	padding: 6px 13px;
+	border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+	background-color: #f8f8f8;
+}
+
+.markdown-body img {
+	max-width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.markdown-body span.frame {
+	display: block;
+	overflow: hidden;
+}
+
+.markdown-body span.frame>span {
+	display: block;
+	float: left;
+	width: auto;
+	padding: 7px;
+	margin: 13px 0 0;
+	overflow: hidden;
+	border: 1px solid #ddd;
+}
+
+.markdown-body span.frame span img {
+	display: block;
+	float: left;
+}
+
+.markdown-body span.frame span span {
+	display: block;
+	padding: 5px 0 0;
+	clear: both;
+	color: #333;
+}
+
+.markdown-body span.align-center {
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+.markdown-body span.align-center>span {
+	display: block;
+	margin: 13px auto 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.markdown-body span.align-center span img {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.markdown-body span.align-right {
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+.markdown-body span.align-right>span {
+	display: block;
+	margin: 13px 0 0;
+	overflow: hidden;
+	text-align: right;
+}
+
+.markdown-body span.align-right span img {
+	margin: 0;
+	text-align: right;
+}
+
+.markdown-body span.float-left {
+	display: block;
+	float: left;
+	margin-right: 13px;
+	overflow: hidden;
+}
+
+.markdown-body span.float-left span {
+	margin: 13px 0 0;
+}
+
+.markdown-body span.float-right {
+	display: block;
+	float: right;
+	margin-left: 13px;
+	overflow: hidden;
+}
+
+.markdown-body span.float-right>span {
+	display: block;
+	margin: 13px auto 0;
+	overflow: hidden;
+	text-align: right;
+}
+
+.markdown-body code,.markdown-body tt {
+	padding: 0;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	margin: 0;
+	font-size: 85%;
+	background-color: rgba(0,0,0,0.04);
+	border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after,
+.markdown-body tt:before,
+.markdown-body tt:after {
+	letter-spacing: -0.2em;
+	content: "\00a0";
+}
+
+.markdown-body code br,
+.markdown-body tt br {
+	display: none;
+}
+
+.markdown-body del code {
+	text-decoration: inherit;
+}
+
+.markdown-body pre>code {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+	border: 0;
+}
+
+.markdown-body .highlight {
+	margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+	margin-bottom: 0;
+	word-break: normal;
+}
+
+.markdown-body pre {
+	word-wrap: normal;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+	display: inline;
+	max-width: initial;
+	padding: 0;
+	margin: 0;
+	overflow: initial;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after,
+.markdown-body pre tt:before,
+.markdown-body pre tt:after {
+	content: normal;
+}
+
+.highlight .pl-coc,
+.highlight .pl-entl,
+.highlight .pl-entm,
+.highlight .pl-eoa,
+.highlight .pl-mai .pl-sf,
+.highlight .pl-mm,
+.highlight .pl-pdv,
+.highlight .pl-sc,
+.highlight .pl-som,
+.highlight .pl-sr,
+.highlight .pl-v,
+.highlight .pl-vpf {
+	color: #0086b3;
+}
+.highlight .pl-eoac,
+.highlight .pl-mdht,
+.highlight .pl-mi1,
+.highlight .pl-mri,
+.highlight .pl-va,
+.highlight .pl-vpu {
+	color: #008080;
+}
+.highlight .pl-c,
+.highlight .pl-pdc {
+	color: #b4b7b4;
+	font-style: italic;
+}
+.highlight .pl-k,
+.highlight .pl-ko,
+.highlight .pl-kolp,
+.highlight .pl-mc,
+.highlight .pl-mr,
+.highlight .pl-ms,
+.highlight .pl-s,
+.highlight .pl-sok,
+.highlight .pl-st {
+	color: #6e5494;
+}
+.highlight .pl-ef,
+.highlight .pl-enf,
+.highlight .pl-enm,
+.highlight .pl-entc,
+.highlight .pl-eoi,
+.highlight .pl-sf,
+.highlight .pl-smc {
+	color: #d12089;
+}
+.highlight .pl-ens,
+.highlight .pl-eoai,
+.highlight .pl-kos,
+.highlight .pl-mh .pl-pdh,
+.highlight .pl-mp,
+.highlight .pl-pde,
+.highlight .pl-stp {
+	color: #458;
+}
+.highlight .pl-enti {
+	color: #d12089;
+	font-weight: bold;
+}
+.highlight .pl-cce,
+.highlight .pl-enc,
+.highlight .pl-kou,
+.highlight .pl-mq {
+	color: #f93;
+}
+.highlight .pl-mp1 .pl-sf {
+	color: #458;
+	font-weight: bold;
+}
+.highlight .pl-cos,
+.highlight .pl-ent,
+.highlight .pl-md,
+.highlight .pl-mdhf,
+.highlight .pl-ml,
+.highlight .pl-pdc1,
+.highlight .pl-pds,
+.highlight .pl-s1,
+.highlight .pl-scp,
+.highlight .pl-sol {
+	color: #df5000;
+}
+.highlight .pl-c1,
+.highlight .pl-cn,
+.highlight .pl-pse,
+.highlight .pl-pse .pl-s2,
+.highlight .pl-vi {
+	color: #a31515;
+}
+.highlight .pl-mb,
+.highlight .pl-pdb {
+	color: #df5000;
+	font-weight: bold;
+}
+.highlight .pl-mi,
+.highlight .pl-pdi {
+	color: #6e5494;
+	font-style: italic;
+}
+.highlight .pl-ms1 {
+	background-color: #f5f5f5;
+}
+.highlight .pl-mdh,
+.highlight .pl-mdi {
+	font-weight: bold;
+}
+.highlight .pl-mdr {
+	color: #0086b3;
+	font-weight: bold;
+}
+.highlight .pl-s2 {
+	color: #333;
+}
+.highlight .pl-ii {
+	background-color: #df5000;
+	color: #fff;
+}
+.highlight .pl-ib {
+	background-color: #f93;
+}
+.highlight .pl-id {
+	background-color: #a31515;
+	color: #fff;
+}
+.highlight .pl-iu {
+	background-color: #b4b7b4;
+}
+.highlight .pl-mo {
+	color: #969896;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+function getDocumentScrollTop() 
+{
+   var res = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset || 0;
+   // alert(res);
+   return res;
+}
+
+function setDocumentScrollTop(ypos) 
+{
+	window.scrollTo(0, ypos);
+}
+
+</script>
+
+
+</head>
+<body class="markdown-body">
+<h1> <a id="sobre-tazas-y-otros-recipientes" class="anchor" href="#sobre-tazas-y-otros-recipientes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sobre tazas y otros recipientes</h1> 
+<p><strong>Ejemplo para explicar Herencia</strong></p> 
+<p><a href="taza.jpg" target="_blank" rel="noopener noreferrer"><img src="taza.jpg" alt="" style="max-width:100%;" /></a></p> 
+<h3> <a id="algo-que-contiene-bebidas-calientes-clase" class="anchor" href="#algo-que-contiene-bebidas-calientes-clase" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Algo que contiene bebidas calientes (Clase)</h3> 
+<p>Queremos representar muchos objetos similares que sirven para contener l&iacute;quidos calientes, permiten tomar de ellos o agregar m&aacute;s cantidad. Tienen una cierta capacidad maxima, por lo que podemos saber cu&aacute;ndo est&aacute;n llenos. Tambi&eacute;n sabemos la temperatura que tiene y a medida que pasa el tiempo su temperatura desciende. A esta abstracci&oacute;n decidimos llamarla <strong>Taza</strong> y definir una clase para representarla.</p> 
+<div class="highlight highlight-source-wollok">
+ <pre>
+<span class="pl-k">class</span> Taza {
+  <span class="pl-k">const</span> capacidad <span class="pl-k">=</span> <span class="pl-c1">250</span> 
+  <span class="pl-k">var</span> cantidad <span class="pl-k">=</span> <span class="pl-c1">0</span>
+  <span class="pl-k">var</span> temperatura <span class="pl-c">//Se debe inicializar al instanciar</span>
+
+  <span class="pl-k">method</span> estaLlena() {
+    <span class="pl-k">return</span> cantidad <span class="pl-k">&gt;=</span> capacidad
+  }
+  <span class="pl-k">method</span> agregar(liquido){
+    cantidad <span class="pl-k">+=</span> liquido
+    <span class="pl-c">// No se controla que la taza rebalse</span>
+  }
+	
+  <span class="pl-k">method</span> tomar(){
+    cantidad <span class="pl-k">-=</span> <span class="pl-c1">10</span>  
+    <span class="pl-c">//Se considera que cada vez que se toma de a 10 unidades</span>
+    <span class="pl-c">//No se controla que no haya suficiente l&iacute;quido para tomar</span>
+  }
+  
+  <span class="pl-k">method</span> temperatura() <span class="pl-k">=</span> temperatura 
+  <span class="pl-c">// Podr&iacute;a haberse definido como property</span>
+	
+  <span class="pl-k">method</span> pasarElTiempo(){
+    temperatura <span class="pl-k">-=</span> <span class="pl-c1">1</span>
+    <span class="pl-c">// Se considera que se disminuye de a uno la temperatura</span>
+   }
+}</pre>
+</div> 
+<h3> <a id="algo-para-bebidas-fr&iacute;as-que-puede-resultar-fr&aacute;gil-m&aacute;s-clases" class="anchor" href="#algo-para-bebidas-fr%C3%ADas-que-puede-resultar-fr%C3%A1gil-m%C3%A1s-clases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Algo para bebidas fr&iacute;as que puede resultar fr&aacute;gil (M&aacute;s clases)</h3> 
+<p>Aparecen otros elementos objetos que necesitamos modelar, que tambi&eacute;n permiten contener l&iacute;quidos, poder ir agregrando y tomando de ellos, y saber si est&aacute;n llenos teniendo como referencia una capacidad m&aacute;xima para cada uno. Como se usan para l&iacute;quidos fr&iacute;os no nos interesa representar su temperatura, pero s&iacute; es importante conocer de que material est&aacute;n hechos, porque si son de vidrio resultan fr&aacute;giles y se pueden caer perdiendo todo su contenido.</p> 
+<p>Si bien en un primer momento podr&iacute;a parecer que la abstraccion de <strong>Taza</strong> nos serv&iacute;a para representarlos (agregar, tomar, capacidad, etc.) vemos que hay caracteristicas definidas que no nos sirven (todo lo referido a temperatura) y hay nuevas caracter&iacute;sticas que la solucion anterior no contempla (fragilidad del material). Utilizando nuevamente el concepto de clase, definimos una nueva a la que llamamos <strong>Vaso</strong>.</p> 
+<p>Ya nos empieza a hacer un poco de ruido tener que &quot;copiar y pegar&quot; parte del c&oacute;digo...</p> 
+<div class="highlight highlight-source-wollok">
+ <pre><span class="pl-k">class</span> Vaso {
+  <span class="pl-k">const</span> capacidad <span class="pl-k">=</span> <span class="pl-c1">250</span> 
+  <span class="pl-k">var</span> cantidad <span class="pl-k">=</span> <span class="pl-c1">0</span>
+  <span class="pl-k">var</span> material <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>vidrio<span class="pl-pds">&quot;</span></span>  <span class="pl-c">//Salvo que se indique lo contrario al instanciar, los vasos son de vidrio </span>
+		
+  <span class="pl-k">method</span> estaLleno() {
+    <span class="pl-k">return</span> cantidad <span class="pl-k">&gt;=</span> capacidad
+  }
+  <span class="pl-k">method</span> agregar(liquido){
+    cantidad <span class="pl-k">+=</span> liquido
+    <span class="pl-c">// No se controla que la taza rebalse</span>
+  }
+	
+  <span class="pl-k">method</span> tomar(){
+    cantidad <span class="pl-k">-=</span> <span class="pl-c1">10</span>  
+    <span class="pl-c">//Se considera que cada vez que se toma de a 10 unidades</span>
+    <span class="pl-c">//No se controla que no haya suficiente l&iacute;quido para tomar</span>
+  }
+  
+  <span class="pl-k">method</span> esFragil(){
+    <span class="pl-k">return</span> material <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>vidrio<span class="pl-pds">&quot;</span></span>
+  }	
+  
+  <span class="pl-k">method</span> caer(){
+    <span class="pl-k">if</span> (<span class="pl-k">self</span>.esFragil()){
+      cantidad <span class="pl-k">=</span> <span class="pl-c1">0</span>
+    }
+  }
+}</pre>
+</div> 
+<h3> <a id="no-se-puede-tomar-si-no-hay-l&iacute;quido-herencia" class="anchor" href="#no-se-puede-tomar-si-no-hay-l%C3%ADquido-herencia" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>No se puede tomar si no hay l&iacute;quido (Herencia)</h3> 
+<p>Aparece un nuevo requerimiento que es el control de la cantidad restante a la hora de tomar. Cuando ya no hay liquido no se puede tomar y se debe lanzar una excepci&oacute;n. Pero si tiene algo de l&iacute;quido, aunque sea una cantidad menor que lo habitualmente se toma, se toma todo lo que queda.</p> 
+<p>Y lo m&aacute;s importante: Nos aclaran que esto sucede tanto para los vasos como para las tazas.</p> 
+<p>La soluci&oacute;n pasa por modificar el m&eacute;todo tomar, haciendo algo as&iacute;</p> 
+<div class="highlight highlight-source-wollok">
+ <pre>  <span class="pl-k">method</span> tomar(){
+    <span class="pl-k">if</span>(cantidad <span class="pl-k">&lt;=</span> <span class="pl-c1">0</span>) {
+      <span class="pl-k">throw</span> <span class="pl-k">new</span> Exception(message<span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>No hay suficiente l&iacute;quido para tomar<span class="pl-pds">&quot;</span></span>)
+    }
+    cantidad <span class="pl-k">-=</span> <span class="pl-c1">10</span>
+    cantidad <span class="pl-k">=</span> cantidad.max(<span class="pl-c1">0</span>)
+  }</pre>
+</div> 
+<p>&iexcl;Pero habr&iacute;a que hacer lo mismo tanto en Taza como en Vaso!</p> 
+<p>Ya hab&iacute;a sido molesto inicialmente tener que definir dos veces buena parte del c&oacute;digo. Ahora tener que modificar dos veces lo mismo es doblemente preocupante, no s&oacute;lo por lo inc&oacute;modo sino por la posibilidad que nos equivoquemos y quede distinto.</p> 
+<p>La soluci&oacute;n consiste en incorporar el concepto de <strong>herencia</strong> y definir una nueva abstracci&oacute;n, una entidad m&aacute;s gen&eacute;rica que abarque tanto tazas como vasos. Elegimos el t&eacute;rmino <strong>recipiente</strong> para representar esta idea. Podr&iacute;amos haber elegido un t&eacute;rmino m&aacute;s descriptivo como &quot;recipiente que sirve para tomar&quot;, pero para que no sea tan extenso nos quedamos con el anterior.</p> 
+<p>Los atributos y m&eacute;todos en com&uacute;n los definimos en la clase Recipiente y el cambio del m&eacute;todo &acute;tomar()&acute; lo hacemos una sola vez.</p> 
+<div class="highlight highlight-source-wollok">
+ <pre><span class="pl-k">class</span> Recipiente{
+  <span class="pl-k">const</span> capacidad <span class="pl-k">=</span> <span class="pl-c1">250</span>
+  <span class="pl-k">var</span> cantidad <span class="pl-k">=</span> <span class="pl-c1">0</span>
+  
+  <span class="pl-k">method</span> estaLleno() {
+    <span class="pl-k">return</span> cantidad <span class="pl-k">&gt;=</span> capacidad  <span class="pl-c">// Detalle: unificamos el g&eacute;nero</span>
+  }
+	
+  <span class="pl-k">method</span> agregar(liquido){
+    cantidad <span class="pl-k">+=</span> liquido
+  }
+  
+  <span class="pl-k">method</span> tomar(){
+    <span class="pl-k">if</span>(cantidad <span class="pl-k">&lt;=</span> <span class="pl-c1">0</span>) {
+      <span class="pl-k">throw</span> <span class="pl-k">new</span> Exception(message<span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>No hay suficiente l&iacute;quido para tomar<span class="pl-pds">&quot;</span></span>)
+    }
+    cantidad <span class="pl-k">-=</span> <span class="pl-c1">10</span>
+    cantidad <span class="pl-k">=</span> cantidad.max(<span class="pl-c1">0</span>)
+  }</pre>
+</div> 
+<p>Ahora, la clases Taza y Vaso <em>heredan</em> de la clase Recipiente y se define en ellas s&oacute;lo lo diferente.</p> 
+<div class="highlight highlight-source-wollok">
+ <pre><span class="pl-k">class</span> Taza <span class="pl-k">inherits</span> Recipiente{
+  <span class="pl-k">var</span> temperatura 
+  
+  <span class="pl-k">method</span> pasarElTiempo(){
+    temperatura <span class="pl-k">-=</span> <span class="pl-c1">1</span>
+  }
+  
+  <span class="pl-k">method</span> temperatura() <span class="pl-k">=</span> temperatura
+}
+
+<span class="pl-k">class</span> Vaso <span class="pl-k">inherits</span> Recipiente{
+  <span class="pl-k">var</span> material <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>vidrio<span class="pl-pds">&quot;</span></span>  <span class="pl-c">//Salvo que se indique lo contrario al instanciar, los vasos son de vidrio</span>
+  
+  <span class="pl-k">method</span> esFragil(){
+    <span class="pl-k">return</span> material <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>vidrio<span class="pl-pds">&quot;</span></span>
+  }
+  
+  <span class="pl-k">method</span> caer(){
+    <span class="pl-k">if</span> (<span class="pl-k">self</span>.esFragil()){
+      cantidad <span class="pl-k">=</span> <span class="pl-c1">0</span>
+    }
+  }
+}</pre>
+</div> 
+<h3> <a id="a-tomar-unos-mates-m&aacute;s-herencia" class="anchor" href="#a-tomar-unos-mates-m%C3%A1s-herencia" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>&iexcl;A tomar unos mates! (M&aacute;s Herencia)</h3> 
+<p>Surgen nuevos elementos a representar. Se trata de algo que contiene l&iacute;quido y se toma de &eacute;l. Cuando se quiere tomar y no hay l&iacute;quido, debe controlarlo. Nos interesa representar su temperatura y sabemos que se enfr&iacute;a con el paso del tiempo.</p> 
+<p>Se le llama cebar a agregarle una cierta cantidad de l&iacute;quido y se permite compartirlo en una ronda de amigos (Al menos, cuando no hay cuarentena...)</p> 
+<p>En t&eacute;rminos del dominio lo denominar&iacute;amos &quot;mate&quot;, pero &iquest;como lo representamos en nuestro modelo?. En primer lugar, la definici&oacute;n de recipiente nos sirve, pero no es suficiente. Si seguimos analizando, vemos que la de Vaso no nos ayuda; la de Taza s&iacute;, todo lo que define nos viene bien, pero sigue habiendo cosas que faltan.</p> 
+<p>Como ninguna de las definiciones existentes se ajusta totalmente a lo que necesitamos, difinimos una nueva clase y la llamamos <strong>Mate</strong>, como nos imagin&aacute;bmos.</p> 
+<p>Lo interesante es utilizar el concepto de Herencia, para que la nueva clase tenga la definici&oacute;n m&iacute;nima y <em>herede</em> lo m&aacute;s posible de las clases existentes. Por lo analizado anteriormente, la clase de la cual conviene que herede es Taza. Es discutible si los t&eacute;rminos elegidos son los m&aacute;s expresivos, tal vez decir que &quot;un mate es como un taza que ...&quot; no sea lo m&aacute;s exacto, pero si le tuvieramos que explicar a un extranjero qu&eacute; es un mate tal vez la noci&oacute;n de taza nos ayude. Podr&iacute;a ser conveniente renombrar Taza por algo como &quot;Recipiente para bebidas calientes&quot; pero para simplificar lo dejamos as&iacute;.</p> 
+<div class="highlight highlight-source-wollok">
+ <pre><span class="pl-k">class</span> Mate <span class="pl-k">inherits</span> Taza{
+  
+  <span class="pl-k">method</span> cebar(){
+    <span class="pl-k">self</span>.agregar(<span class="pl-c1">100</span>) <span class="pl-c">// Asumimos que se ceba de a 100 unidades</span>
+  }
+  
+  <span class="pl-k">method</span> ronda(){
+    <span class="pl-c">// No tenemos el detalle de c&oacute;mo es una ronda de mate. En otro momento se lo definir&aacute;.</span>
+  }
+}</pre>
+</div> 
+<p><a href="diagramaHerencia.png" target="_blank" rel="noopener noreferrer"><img src="diagramaHerencia.png" alt="" style="max-width:100%;" /></a></p> 
+<h3> <a id="diferentes-formas-de-llenarse-redefinici&oacute;n" class="anchor" href="#diferentes-formas-de-llenarse-redefinici%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diferentes formas de llenarse (Redefinici&oacute;n)</h3> 
+<p>Ahora, las tazas se consideran llenas cuando est&aacute;n hasta a 10 unidades de su capacidad m&aacute;xima. Y los mates nunca se consideran llenos.</p> 
+<p>En vez de <em>heredar</em> el m&eacute;todo <code>estaLleno()</code>, lo definimos de una nueva manera en la clase Taza y de una nueva manera en la clase Mate, lo que se denomina <strong>redefinir</strong> o <strong>sobreescribir</strong>. En Vaso no hacemos nada, lo contin&uacute;a heredando de la clase Recipiente.</p> 
+<div class="highlight highlight-source-wollok">
+ <pre><span class="pl-k">class</span> Taza <span class="pl-k">inherits</span> Recipientea{
+ <span class="pl-c">// todo igual  </span>
+  <span class="pl-k">override</span> <span class="pl-k">method</span> estaLleno() {
+    <span class="pl-k">return</span> cantidad <span class="pl-k">&gt;</span> capacidad <span class="pl-k">-</span> <span class="pl-c1">10</span>
+  }
+}
+
+<span class="pl-k">class</span> Mate <span class="pl-k">inherits</span> Taza{
+ <span class="pl-c">// todo igual  </span>
+  <span class="pl-k">override</span> <span class="pl-k">method</span> estaLleno() {
+    <span class="pl-k">return</span> <span class="pl-k">false</span>
+  }
+}</pre>
+</div> 
+<h3> <a id="al-tomar-de-una-taza-tambi&eacute;n-se-enfr&iacute;a-super" class="anchor" href="#al-tomar-de-una-taza-tambi%C3%A9n-se-enfr%C3%ADa-super" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Al tomar de una taza tambi&eacute;n se enfr&iacute;a (Super)</h3> 
+<p>En las tazas, cada vez que se toma de ellas, adem&aacute;s de lo que ya sab&iacute;amos tambi&eacute;n se enfr&iacute;an en una unidad.</p> 
+<p>Redefinimos el m&eacute;todo <code>tomar()</code> en al clase Taza porque queremos que haga algo diferente, pero a la vez queremos aprovechar toda la l&oacute;gica definida en el m&eacute;todo <code>tomar()</code> de Recipiente y no tener que volver a escribirla.</p> 
+<p>Para ello, en la redefinici&oacute;n del m&eacute;todo, indicamos que primero se ejecute el m&eacute;todo de igual nombre en la superclase, para que se realice todo lo que all&iacute; est&aacute; definido, y luego se agrega lo nuevo.</p> 
+<p>Este cambio tambi&eacute;n afecta a los mates, por lo que al tomarlos tambi&eacute;n se van enfriando.</p> 
+<div class="highlight highlight-source-wollok">
+ <pre><span class="pl-k">class</span> Taza <span class="pl-k">inherits</span> Recipientea{
+  <span class="pl-c">// todo igual  </span>
+  <span class="pl-k">override</span> <span class="pl-k">method</span> tomar(){
+    <span class="pl-k">super</span>()   <span class="pl-c">// Con esta expresi&oacute;n llamamos al m&eacute;todo tomar() de la superclase</span>
+    <span class="pl-k">self</span>.pasarElTiempo()
+  }
+}</pre>
+</div> 
+<h3> <a id="una-taza-especial-objetos-que-heredan" class="anchor" href="#una-taza-especial-objetos-que-heredan" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Una taza especial (Objetos que heredan)</h3> 
+<p>Aparece una taza que tiene caracter&iacute;sticas &uacute;nicas que la diferencian de las otras, no solo por el valor de sus atributos, sino por su comportamiento. Tiene una figura que la caracteriza, que la puede hacer divertida, y una capacidad en particular. Definimos un objeto que herede de una clase. Al hacerlo se especifican sus atributos y m&eacute;todos nuevos como en toda definici&oacute;n de herencia y se le da valores iniciales a todos los atributos que hereda, de manera similar a cuando se instancia una clase.</p> 
+<div class="highlight highlight-source-wollok">
+ <pre><span class="pl-k">object</span> tazaVader <span class="pl-k">inherits</span> Taza(temperatura <span class="pl-k">=</span> <span class="pl-c1">60</span>,capacidad <span class="pl-k">=</span> <span class="pl-c1">300</span>) { 
+  <span class="pl-k">var</span> <span class="pl-k">property</span> dibujo <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>soy tu padre<span class="pl-pds">&quot;</span></span>
+  
+  <span class="pl-k">method</span> esDivertida() {
+    <span class="pl-k">return</span> dibujo.contains(<span class="pl-s"><span class="pl-pds">&quot;</span>padre<span class="pl-pds">&quot;</span></span>)
+  }
+}</pre>
+</div> 
+<p><a href="DiagramaRedefinicion.png" target="_blank" rel="noopener noreferrer"><img src="DiagramaRedefinicion.png" alt="" style="max-width:100%;" /></a></p> 
+<h3> <a id="otros-recipientes--clase-abstracta" class="anchor" href="#otros-recipientes--clase-abstracta" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>&iquest;Otros recipientes? (Clase abstracta)</h3> 
+<p>En este contexto, tiene sentido preguntarse si hay otros recipientes adem&aacute;s de tazas, vasos, mates y la taza vader. En caso afirmativo, si no hay nada en particular en ellos que implique la definici&oacute;n de nuevas entidades, podr&iacute;an ser simplemente instancias de la clase Recipiente y no habr&iacute;a que modificar el c&oacute;digo en absoluto.</p> 
+<p>Pero tambi&eacute;n podr&iacute;a suceder que no haya otros elementos por fuera de los mencionados y que la clase Recipiente nunca se intancie, sino que s&oacute;lo se haga <code>new()</code> de sus subclases. En este caso, se la denomina <strong>Clase abstracta</strong></p> 
+<p>Aparece un nuevo requerimiento que consiste en vaciar cualquier recipiente, pero que se realiza de diferente manera seg&uacute;n cu&aacute;l sea. Cuando se vac&iacute;a una taza queda sin l&iacute;quido y vuelve a temperatura ambiente. En los vasos dependiendo de si es fragil, queda un peque&ntilde;o resto. Vacir un mate, podr&iacute;a ser como toda taza e implicar algo m&aacute;s.</p> 
+<p>Sin mayor dificultad, definimos un m&eacute;todo <code>vaciar()</code> con su propia implementaci&oacute;n en cada una de las clases. &iquest;Y qu&eacute; hacemos en la clase Recipiente?</p> 
+<p>Si la clase no es abstacta, como se pide que todo recipiente se puede vaciar, se deber&iacute;a definir tambi&eacute;n en ella el m&eacute;todo <code>vaciar()</code> con su correspondiente implementaci&oacute;n. Pero en caso que sea abstracta no ser&iacute;a necesario definirlo, ya que no van a existir objetos de esa clase que reciban el mensaje.</p> 
+<h3> <a id="una-merienda-m&eacute;todo-abstracto" class="anchor" href="#una-merienda-m%C3%A9todo-abstracto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Una merienda (M&eacute;todo abstracto)</h3> 
+<p>Un nuevo requerimiento nos plantea que se puede hacer una merienda con cualquiera de los recipientes, que consiste en agregarle l&iacute;quido al recipiente, en caso que no est&eacute; lleno, luego tomar varias veces y por &uacute;litmo vaciarlo. Lo que puede constatarse es que m&aacute;s all&aacute; que sea igual o diferente la manera en que se agregue l&iacute;quido, se tome o se vac&iacute;e una taza, vaso, mate u otro recipiente, lo cierto es que la secuencia de la merienda es la misma en todos los casos, por lo que decidimos modelarla en la clase Recipiente, independientemente que sea abstracta o no.</p> 
+<div class="highlight highlight-source-wollok">
+ <pre><span class="pl-k">class</span> Recipiente {
+  <span class="pl-c">//todo igual</span>
+  
+  <span class="pl-k">method</span> realizarMerienda(){
+    <span class="pl-k">if</span>(!<span class="pl-k">self</span>.estaLleno())
+      <span class="pl-k">self</span>.agregar(<span class="pl-c1">250</span>)
+    <span class="pl-c1">5</span>.times{x<span class="pl-k">=&gt;</span><span class="pl-k">self</span>.tomar()}
+    <span class="pl-k">self</span>.vaciar()
+  }
+}</pre>
+</div> 
+<p>Cualquiera de los objetos de las subclases, cuando reciben el mensaje <code>realizarMerienda()</code>, como en su propia clase no est&aacute; definido, encuentran este c&oacute;digo en su superclase Recipiente. Al ejecutarlo, cuando se env&iacute;an a si mismo los otros mensajes, buscan el c&oacute;digo correspondiente empezando siempre por su propia clase. Por ejemplo, en el caso de <code>estaLleno()</code> como est&aacute; redefinido y hay diferentes implementaciones, cada uno lo encuentra en su clase. En el caso de <code>agregar(cantidad)</code> no lo tienen en su propia clase pero lo buscan en su superclase.</p> 
+<p>En el caso que la clase Recipiente no sea abstracta, el m&eacute;todo <code>vaciar()</code> tendr&aacute; su implementaci&oacute;n. Cuando un objeto que es instancia de Recipiente reciba en mensaje, siempre comenzar&aacute; la busqueda del m&eacute;todos en dicha clase.</p> 
+<p>En el caso que Recipiente sea abstracta, como en el c&oacute;digo se llama al m&eacute;todo <code>vaciar()</code> con <code>self</code> como receptor, se debe declarar dicho m&eacute;todo pero se lo hace como <strong>m&eacute;todo abstracto</strong>.</p> 
+<p>Se indica s&oacute;lo el nombre del m&eacute;todo, los par&aacute;metros si tuviera, y sin las { } ni nada de c&oacute;digo. Esto asegura que en las subclases (no abstractas) se deba tener una implementaci&oacute;n de dicho m&eacute;todo.</p> 
+<div class="highlight highlight-source-wollok">
+ <pre>
+<span class="pl-k">class</span> Recipiente {
+  <span class="pl-c">//Todo igual</span>
+  <span class="pl-k">method</span> vaciar() <span class="pl-c">// M&eacute;todo abstracto</span>
+}</pre>
+</div> 
+<h3> <a id="diagrama-est&aacute;tico" class="anchor" href="#diagrama-est%C3%A1tico" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diagrama est&aacute;tico</h3> 
+<p><a href="diagrama.png" target="_blank" rel="noopener noreferrer"><img src="diagrama.png" alt="" style="max-width:100%;" /></a></p>
+</body>
+</html>

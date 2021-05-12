@@ -30,10 +30,6 @@ class Taza {
     //No se controla que no haya suficiente líquido para tomar
   }
   
-  method pasarElTiempo(){
-    temperatura -= 1
-  }
-  
   method temperatura() = temperatura 
   // Podría haberse definido como property
 	

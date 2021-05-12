@@ -1,0 +1,17 @@
+import recipientes.*
+
+const vasoDeVidrio = new Vaso(cantidad = 100)
+const vasoDePapel = new Vaso(cantidad = 200, material = "papel")
+
+test "vaso de vidrio es fragil" {
+	assert.that(vasoDeVidrio.esFragil())
+}
+
+test "vaso de papel no es fragil" {
+	assert.notThat(vasoDePapel.esFragil())
+}
+
+test "un vaso fragil se cae y se derrama todo el líquido" {
+	vasoDeVidrio.caer()
+	assert.equals(0, vasoDeVidrio.cantidad())
+}

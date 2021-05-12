@@ -1,0 +1,39 @@
+import recipientes.*
+
+const taza = new Taza(cantidad = 100, temperatura = 25)
+const tazaGrande = new Taza(capacidad = 500, temperatura = 15)
+
+test "capacidad de taza" {
+	assert.equals(250, taza.capacidad())
+}
+
+test "capacidad de taza grande" {
+	assert.equals(500, tazaGrande.capacidad())
+}
+
+test "pasa el tiempo en una taza" {
+	taza.pasarElTiempo()
+	assert.equals(24, taza.temperatura())
+}
+
+test "tomar de la taza" {
+	taza.tomar()
+	assert.equals(90, taza.cantidad())
+}
+
+test "taza esta llena" {
+	tazaGrande.agregar(499) // capacidad de 500
+	assert.that(tazaGrande.estaLlena())
+}
+
+test "taza realiza una merienda" {
+	taza.realizarMerienda()
+	assert.equals(0, taza.cantidad())
+}
+
+// Método lookup
+// Es la forma de saber qué método se ejecuta ante un mensaje
+// Siempre es buscando desde el objeto 
+// Después en la clase desde la cual se instanció
+// Y finalmente hacia arriba en la jerarquía
+
